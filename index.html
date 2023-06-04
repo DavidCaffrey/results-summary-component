@@ -19,58 +19,46 @@
   </head>
   <body>
     <main>
-      <article>
-        <section>
-          <h2>Your Result</h2>
-          <div>76 of 100</div>
-          <h1>Great</h1>
-          <p>You scored higher than 65% of the people who have taken these
+      <article class="card">
+        <section class="result">
+          <h2 class="result-sub-heading">Your Result</h2>
+          <div class="score-info"><span class="score">76</span><span class="denominator">of 100</span></div>
+          <h1 class="result-heading">Great</h1>
+          <p class="result-text">You scored higher than 65% of the people who have taken these
             tests.</p>
         </section>
-        <section>
-          <h2>Summary</h2>
+        <section class="summary">
+          <h2 class="summary-sub-heading">Summary</h2>
           
-          <div>Reaction
-            80 / 100</div>
-          <div> 
-            Memory
-       
-                   92/ 100</div>
-          <div>     Verbal
-           
-            61/ 100</div>
-          <div>   Visual
-            72 / 100</div>
+          <div class="summary-card sum-card-red">
+            <img src="/assets/images/icon-reaction.svg" alt="lightning icon">
+            <h3>Reaction</h3>
+            <p><span>80</span>/ 100</p>
+          </div>
+          <div class="summary-card sum-card-yellow"> 
+            <img src="/assets/images/icon-memory.svg" alt="brain icon">
+            <h3>Memory</h3>
+            <p><span>92</span>/ 100</p>
+          </div>
+          <div class="summary-card sum-card-green">
+            <img src="/assets/images/icon-verbal.svg" alt="speech bubble icon">
+            <h3>Verbal</h3>
+            <p><span>61</span>/ 100</p>     
+          </div>
+          <div class="summary-card sum-card-blue">
+            <img src="/assets/images/icon-visual.svg" alt="eye icon">
+            <h3>Visual</h3>
+            <p><span>72</span>/ 100</p>
+          </div>
           <button type="submit">Continue</button>
         </section>
       </article>
-     
-      
-     
-       
-       
-             
-
-            
-       
-     
-     
-                
-
-        
-       
-            
-
-           
-       
-        
-    
-
+     </main>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="">David Caffrey</a>.
+      >. Coded by <a href="https://github.com/DavidCaffrey/results-summary-component">David Caffrey</a>.
     </div>
   </body>
 </html>
