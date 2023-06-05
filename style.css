@@ -31,6 +31,7 @@
   --clr-neutral-200:hsl(221, 100%, 96%);
   --clr-neutral-300:hsl(241, 100%, 89%);
   --clr-neutral-400:hsl(224, 30%, 27%);
+  --clr-neutral-500:hsla(224, 30%, 27%, 0.5);
 
   /* Font */
   --ff-base:'Hanken Grotesk', 'sans-serif';
@@ -87,6 +88,7 @@ main{
 
 .card{
   max-width: 350px;
+  background-color: var(--clr-neutral-100);
 }
 
 .result{
@@ -96,6 +98,7 @@ main{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius: 0 0 25px 25px;
 }
 .result-sub-heading{
   color: var(--clr-neutral-200);
@@ -113,7 +116,7 @@ main{
   height: 140px;
   color:var(--clr-neutral-100);
   border-radius: 50%;
-  background-image: linear-gradient(var(--bg-clr-royal),var(--bg-clr-slate));
+  background-image: linear-gradient(var(--clr-circle-violet),var(--clr-circle-persian));
   display: flex;
   flex-direction: column;
   justify-content:center;
@@ -134,31 +137,66 @@ main{
   display: grid;
   grid-template-columns: 1fr;
   background-color: var(--clr-neutral-100);
+  gap: 1rem;
+  padding: 0 1rem;
 }
 
+.summary-sub-heading{
+  color:var(--clr-neutral-400);
+}
 .summary-card{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 50px 1fr 1fr;
+  border-radius: 10px;
+}
+
+.summary-card h3{
+  font-weight: var(--fw-regular);
 }
 
 .sum-card-red{
-  background-color: hsl(0, 22%, 84%);
+  background-color: hsla(0, 22%, 84%, 0.4);
   color:var(--clr-primary-red);
 }
 
 .sum-card-yellow{
-  background-color: hsl(44, 76%, 90%);
+  background-color: hsla(45, 76%, 90%, 0.4);
   color:var(--clr-primary-yellow);
 }
 
 .sum-card-green{
-  background-color: hsl(78, 76%, 90%);
+  background-color: hsla(78, 76%, 90%, 0.4);
   color:var(--clr-primary-teal);
 }
 
 .sum-card-blue{
-  background-color: hsl(197, 76%, 90%);
+  background-color: hsla(197, 76%, 90%, 0.4);
   color:var(--clr-primary-blue);
+}
+
+.icon{
+  align-self:center;
+  justify-self:center;
+}
+
+.ratio{
+  color: var(--clr-neutral-500);
+  font-weight: var(--fw-semi-bold);
+  align-self:center;
+  justify-self:center;
+}
+
+.ratio span{
+  color:var(--clr-neutral-400);
+}
+
+.btn{
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-neutral-400);
+  padding: 1rem 0;
+  font-size: var(--fs-400);
+  border: none;
+  border-radius: 30px;
 }
 
 
